@@ -1,6 +1,6 @@
 # postcss-px-to-viewport-modern
 
-## [导航至Github-pages网站](https://harlan1012.github.io/postcss-px-to-viewport-modern/)
+## [👉 导航至Github-pages网站](https://harlan1012.github.io/postcss-px-to-viewport-modern/)
 
 The postcss-px-to-viewport-modern plugin features a brand-new architecture and introduces a customizable unit conversion strategy that can be flexibly applied across various scenarios.
 
@@ -17,8 +17,6 @@ The postcss-px-to-viewport-modern plugin features a brand-new architecture and i
 - vite: "^3.0.5"
 - vitest: "^3.0.5"
 - vitepress: "^1.6.3"
-
-### [👉 配置项](https://github.com/harlan1012/postcss-px-to-viewport-modern/blob/main/docs/api.md) [👉 最佳实践](https://github.com/harlan1012/postcss-px-to-viewport-modern/blob/main/docs/upgrade.md) [👉 开发指南](https://github.com/harlan1012/postcss-px-to-viewport-modern/blob/main/docs/develop.md)
 
 ## 安装
 

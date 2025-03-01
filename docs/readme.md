@@ -16,7 +16,9 @@ The postcss-px-to-viewport-modern plugin features a brand-new architecture and i
 - vitest: "^3.0.5"
 - vitepress: "^1.6.3"
 
-### [👉 配置项](https://github.com/harlan1012/postcss-px-to-viewport-modern/blob/main/docs/api.md) [👉 最佳实践](https://github.com/harlan1012/postcss-px-to-viewport-modern/blob/main/docs/upgrade.md) [👉 开发指南](https://github.com/harlan1012/postcss-px-to-viewport-modern/blob/main/docs/develop.md)
+## 配置选项
+
+<a href="https://harlan1012.github.io/postcss-px-to-viewport-modern/api.html" target="_blank" rel="noreferrer">-> 配置选项参考这里</a>
 
 ## 安装
 
@@ -31,10 +33,6 @@ npm install postcss --save
 ```bash
 npm install postcss-px-to-viewport-modern --save
 ```
-
-## 配置选项
-
-<a href="https://github.com/harlan1012/postcss-px-to-viewport-modern/api.html " target="_blank" rel="noreferrer">-> 配置选项参考这里</a>
 
 ## 使用
 
