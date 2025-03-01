@@ -6,7 +6,7 @@ export default defineConfig({
   description: '这是一个将像素单位转换为视口单位（vw、vh、vmin、vmax）的PostCSS插件',
   srcDir: 'docs',
   outDir: '.vitepress/dist',
-  base: '/',
+  base: '/postcss-px-to-viewport-modern',
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
