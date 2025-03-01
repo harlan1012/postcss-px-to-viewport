@@ -189,7 +189,7 @@ module.exports = {
 而在一个针对pad设备的CSS文件中：
 
 ```scss
-@media (min-width: 520px) and (orientation: landscape) {
+@media (min-width: 600px) and (orientation: landscape) {
   @design-width 768px;
   @design-unit vw;
   .box {
@@ -235,7 +235,7 @@ module.exports = {
 #### 媒体查询中首层定义，则生效于整个媒体查询，不区分代码顺序和嵌套结构
 
 ```scss
-@media (min-width: 520px) and (orientation: landscape) {
+@media (min-width: 600px) and (orientation: landscape) {
   .item-subtitle {
     width: 300px;
   }
@@ -364,7 +364,7 @@ module.exports = {
 
   @design-width 750px;
   @design-unit vw;
-  @media (min-width: 520px) and (orientation: landscape) {
+  @media (min-width: 600px) and (orientation: landscape) {
     .item-title {
       width: 750px; // 结果按照自定义750转换： 100vw
     }
@@ -374,7 +374,7 @@ module.exports = {
 ```scss
 // index.scss
 
-  @media (min-width: 520px) and (orientation: landscape) {
+  @media (min-width: 600px) and (orientation: landscape) {
     @design-width 750px;
     @design-unit vw;
     .item-title {

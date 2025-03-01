@@ -1,13 +1,13 @@
 
 # postcss-px-to-viewport-plus
 
-全新架构的postcss-px-to-viewport-plus插件，增加了自定义单位转换策略，灵活适用各种场景。
-
 The postcss-px-to-viewport-plus plugin features a brand-new architecture and introduces a customizable unit conversion strategy that can be flexibly applied across various scenarios.
+
+全新架构的postcss-px-to-viewport-plus插件，增加了自定义单位转换策略，灵活适用各种场景。
 
 这是一个将像素单位转换为视口单位（vw、vh、vmin、vmax）的PostCSS插件。由于最原始项目[evrone/postcss-px-to-viewport](https://github.com/evrone/postcss-px-to-viewport)已经不再维护，且底层架构很旧了，所以这个项目从更新了底层架构框架，且增加了自定义单位转换策略，基于最新版本的PostCSS（8.x）开发。
 
-基础环境：
+开发环境：
 
 - node >= 22
 - postCSS: "^8.4.49"
@@ -17,18 +17,22 @@ The postcss-px-to-viewport-plus plugin features a brand-new architecture and int
 - vitest: "^3.0.5"
 - vitepress: "^1.6.3"
 
+## [👉 配置项](https://github.com/harlan1012/postcss-px-to-viewport-plus/blob/main/docs/api.md)
+## [👉 最佳实践](https://github.com/harlan1012/postcss-px-to-viewport-plus/blob/main/docs/upgrade.md)
+## [👉 开发指南](https://github.com/harlan1012/postcss-px-to-viewport-plus/blob/main/docs/develop.md)
+
 ## 安装
 
 要使用这个插件，你需要在你的项目中设置好PostCSS。如果你还没有设置PostCSS，你可以通过运行以下命令来安装：
 
 ```bash
-npm install postcss --save
+npm install postcss --save -D
 ```
 
 接下来，安装`postcss-px-to-viewport-plus`插件：
 
 ```bash
-npm install postcss-px-to-viewport-plus --save
+npm install postcss-px-to-viewport-plus --save -D
 ```
 
 
@@ -55,7 +59,7 @@ npm install postcss-px-to-viewport-plus --save
 | **replaceRules**              | 替换包含vw的规则而不是添加回退规则。                                                                                       | true                      |
 | **excludeFiles**              | 要忽略的文件（作为正则表达式数组）。                                                                                       | []                        |
 | **includeFiles**              | 只转换匹配的文件（作为正则表达式数组）。                                                                                   | []                        |
-| **enableLandscape**           | 为横向模式添加@media (orientation: landscape)。                                                                            | true                      |
+| **enableLandscape**           | 为横屏模式添加@media (orientation: landscape)。                                                                            | true                      |
 | **parentClass**               | 横屏模式下，在自动增加横屏媒体查询时，将 .xxx 都替换为 .parentClass .xxx，提升代码权重，解决某些情况下横屏样式被覆盖问题。 | ''                        |
 | **enableCustomAtRule**        | 启用自定义规则转换。                                                                                                       | true                      |
 | **customAtRuleWidth**         | 自定义 @design-width 规则名称(默认为design-width)。                                                                        | 'design-width'            |
@@ -203,20 +207,18 @@ module.exports = {
 
 使用这个配置，你的CSS中的像素值将在PostCSS处理期间自动转换为视口单位。同时，你可以在每个文件中使用注释来指定某个代码块的特定视口宽度。
 
-例如，在一个针对pad设备的CSS文件中：
+例如：
 
 ```scss
+// 针对phone设备进行适配
 @design-width 375px;
 @design-unit vw;
 .box {
   width: 375px; /* 将被转换为 100vw */
 }
-```
 
-而在一个针对pad设备的CSS文件中：
-
-```scss
-@media (min-width: 520px) and (orientation: landscape) {
+@media (min-width: 600px) and (orientation: landscape) {
+  // 针对pad设备的适配
   @design-width 768px;
   @design-unit vw;
   .box {
@@ -262,7 +264,7 @@ module.exports = {
 #### 媒体查询中首层定义，则生效于整个媒体查询，不区分代码顺序和嵌套结构
 
 ```scss
-@media (min-width: 520px) and (orientation: landscape) {
+@media (min-width: 600px) and (orientation: landscape) {
   .item-subtitle {
     width: 300px;
   }
@@ -391,7 +393,7 @@ module.exports = {
 
   @design-width 750px;
   @design-unit vw;
-  @media (min-width: 520px) and (orientation: landscape) {
+  @media (min-width: 600px) and (orientation: landscape) {
     .item-title {
       width: 750px; // 结果按照自定义750转换： 100vw
     }
@@ -401,7 +403,7 @@ module.exports = {
 ```scss
 // index.scss
 
-  @media (min-width: 520px) and (orientation: landscape) {
+  @media (min-width: 600px) and (orientation: landscape) {
     @design-width 750px;
     @design-unit vw;
     .item-title {

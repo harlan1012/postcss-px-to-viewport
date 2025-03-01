@@ -87,7 +87,7 @@ export default defineConfig({
   font-size: 14px;
 }
 
-@media (min-width: 520px) and (orientation: landscape) {
+@media (min-width: 600px) and (orientation: landscape) {
     // pad 适配
     @design-width 768px;
     @design-unit vh;
@@ -103,7 +103,7 @@ export default defineConfig({
     }
 }
 
-@media (min-width: 520px) and (orientation: landscape) {
+@media (min-width: 600px) and (orientation: landscape) {
     // pad 适配
     @design-width 768px;
     @design-unit vh;

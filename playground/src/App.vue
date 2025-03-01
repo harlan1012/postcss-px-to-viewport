@@ -38,7 +38,7 @@
         <p class="item-title">
           媒体查询参与转换
         </p>
-        <p> @media (min-width: 520px) font-size: 18px; padding: 30px;</p>
+        <p> @media (min-width: 600px) font-size: 18px; padding: 30px;</p>
       </div>
       <div class="item mixed-units">
         <p class="item-title">
@@ -82,7 +82,7 @@
           媒体查询中更改设计稿标准 嵌套单位转换
         </p>
         <p>
-          @media (min-width: 520px) {
+          @media (min-width: 600px) {
           @design-width 1500px;
           @design-unit vw;
           .deep-nest-custom-design {
@@ -99,7 +99,7 @@
           横屏媒体查询中更改设计稿标准 嵌套单位转换
         </p>
         <p class="item-subtitle">
-          @media (min-width: 520px) and (orientation: landscape) {
+          @media (min-width: 600px) and (orientation: landscape) {
           .deep-nest-custom-design-landscape {
           .item-subtitle {
           width: 300px;
@@ -261,7 +261,7 @@
   height: 200px; /* px-to-viewport-ignore */
 }
 
-@media (min-width: 520px) {
+@media (min-width: 600px) {
   .responsive {
     font-size: 18px;
     padding: 30px;
@@ -293,7 +293,7 @@
 .deep-nest-custom-design-landscape-outside {
   width: 375px;
 }
-@media (min-width: 520px) {
+@media (min-width: 600px) {
   @design-width 1500px;
   @design-unit vw;
   .deep-nest-custom-design {
@@ -304,7 +304,7 @@
   }
 }
 
-@media (min-width: 520px) and (orientation: landscape) {
+@media (min-width: 600px) and (orientation: landscape) {
   .deep-nest-custom-design-landscape {
     .item-subtitle {
       width: 300px;
