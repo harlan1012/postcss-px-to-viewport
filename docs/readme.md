@@ -1,4 +1,3 @@
-
 # postcss-px-to-viewport-plus
 
 The postcss-px-to-viewport-plus plugin features a brand-new architecture and introduces a customizable unit conversion strategy that can be flexibly applied across various scenarios.
@@ -17,8 +16,7 @@ The postcss-px-to-viewport-plus plugin features a brand-new architecture and int
 - vitest: "^3.0.5"
 - vitepress: "^1.6.3"
 
-
-### [👉 配置项](https://github.com/harlan1012/postcss-px-to-viewport-plus/blob/main/docs/api.md)   [👉 最佳实践](https://github.com/harlan1012/postcss-px-to-viewport-plus/blob/main/docs/upgrade.md)   [👉 开发指南](https://github.com/harlan1012/postcss-px-to-viewport-plus/blob/main/docs/develop.md)
+### [👉 配置项](https://github.com/harlan1012/postcss-px-to-viewport-plus/blob/main/docs/api.md) [👉 最佳实践](https://github.com/harlan1012/postcss-px-to-viewport-plus/blob/main/docs/upgrade.md) [👉 开发指南](https://github.com/harlan1012/postcss-px-to-viewport-plus/blob/main/docs/develop.md)
 
 ## 安装
 
@@ -34,11 +32,9 @@ npm install postcss --save
 npm install postcss-px-to-viewport-plus --save
 ```
 
-
 ## 配置选项
 
 <a href="https://github.com/harlan1012/postcss-px-to-viewport-plus/api.html " target="_blank" rel="noreferrer">-> 配置选项参考这里</a>
-
 
 ## 使用
 
@@ -131,6 +127,7 @@ export default defineConfig({
   },
 })
 ```
+
 ## 启用自定义规则转换
 
 当开启enableCustomAtRule之后，允许使用@design-width 和 @design-unit 自定义规则去分别定义不同文件、class、媒体查询中的转换标准。如下：

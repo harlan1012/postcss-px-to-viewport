@@ -1,5 +1,4 @@
-export * from '@antfu/eslint-config'
-export { antfu } from '@antfu/eslint-config'
+import antfu from '@antfu/eslint-config'
 
 export default antfu({
   formatters: true,
