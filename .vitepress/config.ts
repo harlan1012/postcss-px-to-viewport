@@ -5,7 +5,7 @@ export default defineConfig({
   title: 'postcss-px-to-viewport-modern',
   description: '这是一个将像素单位转换为视口单位（vw、vh、vmin、vmax）的PostCSS插件',
   srcDir: 'docs',
-  outDir: 'public',
+  outDir: '.vitepress/dist',
   base: '/',
 
   themeConfig: {
