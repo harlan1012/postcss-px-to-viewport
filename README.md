@@ -17,9 +17,7 @@ The postcss-px-to-viewport-plus plugin features a brand-new architecture and int
 - vitest: "^3.0.5"
 - vitepress: "^1.6.3"
 
-## [👉 配置项](https://github.com/harlan1012/postcss-px-to-viewport-plus/blob/main/docs/api.md)
-## [👉 最佳实践](https://github.com/harlan1012/postcss-px-to-viewport-plus/blob/main/docs/upgrade.md)
-## [👉 开发指南](https://github.com/harlan1012/postcss-px-to-viewport-plus/blob/main/docs/develop.md)
+### [👉 配置项](https://github.com/harlan1012/postcss-px-to-viewport-plus/blob/main/docs/api.md)   [👉 最佳实践](https://github.com/harlan1012/postcss-px-to-viewport-plus/blob/main/docs/upgrade.md)   [👉 开发指南](https://github.com/harlan1012/postcss-px-to-viewport-plus/blob/main/docs/develop.md)
 
 ## 安装
 
