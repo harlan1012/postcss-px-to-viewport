@@ -1,0 +1,6 @@
+/* 导入外部的变量文件 variables.scss */
+@use './variables.scss';
+
+body {
+  background-color: #f0f0f0;
+}

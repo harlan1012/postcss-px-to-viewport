@@ -1,0 +1,178 @@
+{
+  "[css]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "cSpell.ignoreRegExpList": [
+    "string"
+  ],
+  "cSpell.words": [
+    "antfu",
+    "Artboard",
+    "Artboards",
+    "Attributify",
+    "automd",
+    "brotli",
+    "Cascader",
+    "changelogen",
+    "cloze",
+    "clsx",
+    "comlink",
+    "composables",
+    "demi",
+    "Dexie",
+    "echarts",
+    "eruda",
+    "gendoc",
+    "gifuct",
+    "globalmousemove",
+    "globalpointermove",
+    "gsap",
+    "Heiti",
+    "iconify",
+    "iife",
+    "intlify",
+    "lightningcss",
+    "longpress",
+    "Lottile",
+    "Mediatable",
+    "mkdist",
+    "noncestr",
+    "nuxt",
+    "Oauths",
+    "omvd",
+    "pinia",
+    "pixi",
+    "pnpm",
+    "pnpx",
+    "pointerupoutside",
+    "projectnote",
+    "pswp",
+    "rambda",
+    "regist",
+    "syncpack",
+    "taze",
+    "treeshake",
+    "tsup",
+    "unhead",
+    "unionid",
+    "unocss",
+    "unplugin",
+    "Vite",
+    "vitejs",
+    "vitepress",
+    "Vitesse",
+    "vitest",
+    "vueuse",
+    "webgl",
+    "webgpu",
+    "wechat",
+    "Yahei",
+  ],
+  "css.validate": false,
+  // Auto fix
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "editor.formatOnSave": false,
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.unicodeHighlight.allowedLocales": {
+    "zh-hans": true,
+    "zh-hant": true
+  },
+  "eslint.format.enable": true,
+  // Silent the stylistic rules in you IDE, but still auto fix them
+  "eslint.rules.customizations": [
+    {
+      "rule": "style/*",
+      "severity": "off"
+    },
+    {
+      "rule": "format/*",
+      "severity": "off"
+    },
+    {
+      "rule": "*-indent",
+      "severity": "off"
+    },
+    {
+      "rule": "*-spacing",
+      "severity": "off"
+    },
+    {
+      "rule": "*-spaces",
+      "severity": "off"
+    },
+    {
+      "rule": "*-order",
+      "severity": "off"
+    },
+    {
+      "rule": "*-dangle",
+      "severity": "off"
+    },
+    {
+      "rule": "*-newline",
+      "severity": "off"
+    },
+    {
+      "rule": "*quotes",
+      "severity": "off"
+    },
+    {
+      "rule": "*semi",
+      "severity": "off"
+    }
+  ],
+  // Enable eslint for all supported languages
+  "eslint.validate": [
+    "astro",
+    "css",
+    "gql",
+    "graphql",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "markdown",
+    "scss",
+    "toml",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "xml",
+    "yaml"
+  ],
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "scss.validate": false
+}
