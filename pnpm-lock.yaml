@@ -65,7 +65,7 @@ importers:
 
   playground:
     dependencies:
-      postcss-px-to-viewport-plus:
+      postcss-px-to-viewport-modern:
         specifier: workspace:*
         version: link:..
       vue:

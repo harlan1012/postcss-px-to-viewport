@@ -8,7 +8,7 @@ import PostcssPXConversion from '../src/index'
 // https://vitejs.dev/config/
 export default defineConfig({
   // 用于 gitlab pages 在线示例
-  base: '/postcss-px-to-viewport-plus/playground/',
+  base: '/postcss-px-to-viewport-modern/playground/',
   // 用于 gitlab pages 在线示例
   build: {
     outDir: '../public/playground',

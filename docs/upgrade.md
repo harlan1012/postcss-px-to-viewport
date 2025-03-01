@@ -17,10 +17,10 @@ pnpm install postcss@8.4.49 -D
 
 ```
 
-## 3. 安装postcss-px-to-viewport-plus 插件
+## 3. 安装postcss-px-to-viewport-modern 插件
 
 ```bash
-pnpm install postcss-px-to-viewport-plus --save -D
+pnpm install postcss-px-to-viewport-modern --save -D
 ```
 
 ## 4. 配置postcss默认配置
@@ -32,7 +32,7 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
-        'postcss-px-to-viewport-plus':({}),
+        'postcss-px-to-viewport-modern':({}),
       ],
     },
   },
@@ -46,7 +46,7 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
-        'postcss-px-to-viewport-plus':({
+        'postcss-px-to-viewport-modern':({
           unitType: 'px',
           viewportWidth: 375,
           viewportUnit: 'vw',

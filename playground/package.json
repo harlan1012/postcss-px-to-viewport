@@ -15,7 +15,7 @@
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
-    "postcss-px-to-viewport-plus": "workspace:*",
+    "postcss-px-to-viewport-modern": "workspace:*",
     "vue": "^3.5.13"
   },
   "devDependencies": {

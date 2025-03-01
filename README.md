@@ -1,8 +1,8 @@
-# postcss-px-to-viewport-plus
+# postcss-px-to-viewport-modern
 
-The postcss-px-to-viewport-plus plugin features a brand-new architecture and introduces a customizable unit conversion strategy that can be flexibly applied across various scenarios.
+The postcss-px-to-viewport-modern plugin features a brand-new architecture and introduces a customizable unit conversion strategy that can be flexibly applied across various scenarios.
 
-全新架构的postcss-px-to-viewport-plus插件，增加了自定义单位转换策略，灵活适用各种场景。
+全新架构的postcss-px-to-viewport-modern插件，增加了自定义单位转换策略，灵活适用各种场景。
 
 这是一个将像素单位转换为视口单位（vw、vh、vmin、vmax）的PostCSS插件。由于最原始项目[evrone/postcss-px-to-viewport](https://github.com/evrone/postcss-px-to-viewport)已经不再维护，且底层架构很旧了，所以这个项目从更新了底层架构框架，且增加了自定义单位转换策略，基于最新版本的PostCSS（8.x）开发。
 
@@ -16,7 +16,7 @@ The postcss-px-to-viewport-plus plugin features a brand-new architecture and int
 - vitest: "^3.0.5"
 - vitepress: "^1.6.3"
 
-### [👉 配置项](https://github.com/harlan1012/postcss-px-to-viewport-plus/blob/main/docs/api.md) [👉 最佳实践](https://github.com/harlan1012/postcss-px-to-viewport-plus/blob/main/docs/upgrade.md) [👉 开发指南](https://github.com/harlan1012/postcss-px-to-viewport-plus/blob/main/docs/develop.md)
+### [👉 配置项](https://github.com/harlan1012/postcss-px-to-viewport-modern/blob/main/docs/api.md) [👉 最佳实践](https://github.com/harlan1012/postcss-px-to-viewport-modern/blob/main/docs/upgrade.md) [👉 开发指南](https://github.com/harlan1012/postcss-px-to-viewport-modern/blob/main/docs/develop.md)
 
 ## 安装
 
@@ -26,10 +26,10 @@ The postcss-px-to-viewport-plus plugin features a brand-new architecture and int
 npm install postcss --save -D
 ```
 
-接下来，安装`postcss-px-to-viewport-plus`插件：
+接下来，安装`postcss-px-to-viewport-modern`插件：
 
 ```bash
-npm install postcss-px-to-viewport-plus --save -D
+npm install postcss-px-to-viewport-modern --save -D
 ```
 
 ## 配置选项
@@ -75,7 +75,7 @@ npm install postcss-px-to-viewport-plus --save -D
 
 module.exports = {
   plugins: {
-    'postcss-px-to-viewport-plus': {
+    'postcss-px-to-viewport-modern': {
       unitType: 'px',
       viewportWidth: 375,
       viewportUnit: 'vw',
@@ -112,7 +112,7 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
-        'postcss-px-to-viewport-plus':({}),
+        'postcss-px-to-viewport-modern':({}),
       ],
     },
   },
@@ -125,7 +125,7 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
-        'postcss-px-to-viewport-plus':({
+        'postcss-px-to-viewport-modern':({
           unitType: 'px',
           viewportWidth: 375,
           viewportUnit: 'vw',
@@ -174,7 +174,7 @@ export default defineConfig({
 
 module.exports = {
   plugins: {
-    'postcss-px-to-viewport-plus': {
+    'postcss-px-to-viewport-modern': {
       unitType: 'px',
       viewportWidth: 375,
       viewportUnit: 'vw',
@@ -331,7 +331,7 @@ body {
 
 module.exports = {
   plugins: {
-    'postcss-px-to-viewport-plus': {
+    'postcss-px-to-viewport-modern': {
       unitType: 'px',
       viewportWidth: 375,
       viewportUnit: 'vw',

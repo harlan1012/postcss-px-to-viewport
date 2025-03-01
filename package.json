@@ -1,14 +1,14 @@
 {
-  "name": "postcss-px-to-viewport-plus",
+  "name": "postcss-px-to-viewport-modern",
   "type": "module",
   "version": "1.0.0",
   "packageManager": "pnpm@9.15.3",
   "description": "A plugin for PostCSS that generates viewport units (vw, vh, vmin, vmax) from pixel units.",
   "author": "harlan <https://github.com/harlan1012>",
-  "homepage": "https://github.com/harlan1012/postcss-px-to-viewport-plus#readme",
+  "homepage": "https://github.com/harlan1012/postcss-px-to-viewport-modern#readme",
   "repository": {
     "type": "git",
-    "url": "git@github.com:harlan1012/postcss-px-to-viewport-plus.git"
+    "url": "git@github.com:harlan1012/postcss-px-to-viewport-modern.git"
   },
   "keywords": [],
   "sideEffects": false,

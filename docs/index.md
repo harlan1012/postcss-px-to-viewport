@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "postcss-px-to-viewport-plus"
+  name: "postcss-px-to-viewport-modern"
   text: ""
   tagline: 这是一个将像素单位转换为视口单位（vw、vh、vmin、vmax）的PostCSS插件
   actions:
